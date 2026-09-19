@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --crema: #faf3e7;
+  --tinta: #241c2c;
+  --texto-suave: #6e5f5c;
+  --ambar: #e8a33d;
+  --sobre-acento: #241c2c;
+  --tarjeta-bg: #ffffff;
+  --borde: #e7dcc8;
+
+  --fondo: var(--crema);
+  --texto: var(--tinta);
+  --acento: var(--ambar);
+
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Fraunces', serif;
+
+  font: 16px/1.5 var(--sans);
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  min-height: 100vh;
+  background: var(--fondo);
+  color: var(--texto);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading);
+  font-weight: 600;
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: var(--sans);
+}
